@@ -2,6 +2,9 @@
 package udg.cuvalles.evaluacion1
 
 import android.os.Bundle
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Paint
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -18,13 +21,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
-import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.Paint
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,23 +69,6 @@ fun PantallaPrincipal() {
             .background(Color(0xFFF4F6FA))
             .padding(16.dp)
     ) {
-        Text(
-            text = "Evaluación Práctica 1",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            color = azul
-        )
-
-        Spacer(modifier = Modifier.height(8.dp))
-
-        Text(
-            text = "Aplicación con Jetpack Compose",
-            fontSize = 14.sp,
-            color = Color.DarkGray
-        )
-
-        Spacer(modifier = Modifier.height(20.dp))
-
         Card(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(16.dp),

@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "udg.cuvalles.evaluacion1"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "udg.cuvalles.evaluacion1"
